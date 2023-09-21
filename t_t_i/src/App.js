@@ -5,7 +5,6 @@ const API_TOKEN = "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";
 const ImageGenerationForm = () => {
   const [loading, setLoading] = useState(false);
   const [output, setOutput] = useState(null);
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     setLoading(true);
