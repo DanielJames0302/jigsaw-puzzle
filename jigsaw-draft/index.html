@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Puzlle cam</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body onload="main()">
+    <canvas id="myCanvas"></canvas>
+    <div id="menuItems">
+        <div id="controls">
+            Difficulty <select name="" id="difficulty" onchange="setDifficulty()">
+              <option value="easy"></option>
+              <option value="medium"></option>
+              <option value="hard"></option>
+              <option value="insane"></option>
+            </select>
+            <br>
+            <br>
+            <button onclick="restart()">Start</button>
+        </div>
+       
+
+    </div>
+    <div id="time"></div>
+ 
+  </body>
+  <script src="script.js"></script>
+</html>
