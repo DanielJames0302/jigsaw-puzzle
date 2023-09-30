@@ -12,7 +12,7 @@ function App() {
           <Scores />
         </div>
         <div className="right-section">
-          <h1>Memory Game - React</h1>
+         
           <Cards />
   </div> */}
         <Room/>
