@@ -3,23 +3,28 @@ import Cards from './components/Cards'
 import './App.css'
 import Scores from './components/Scores'
 import Room from './page/Room'
+import LoginPage from './page/LoginPage'
+import {BrowserRouter as Router,Route, Switch} from 'react-router-dom';
+
 function App() {
 
   return (
-    <>
-     <div className="App">
-      {/*  <div className="left-section">
-          <Scores />
-        </div>
-        <div className="right-section">
-         
-          <Cards />
-  </div> */}
-        <Room/>
+    <Router>
+       <div className="App">
+      
+        <Switch>
+          <Route exact path='/' >
+            <LoginPage/>
+          </Route>
+          <Route path = '/room'>
+            <Room/>
+          </Route>
+        </Switch>
+       
         
         
      </div>
-    </>
+    </Router>
   )
 }
 
